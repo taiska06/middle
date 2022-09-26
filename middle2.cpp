@@ -1,4 +1,4 @@
-#include "middle2.h"
+#include "middle.h"
 using namespace std;
 int itc_max_num(long long number){
     int max,n;
