@@ -9,6 +9,7 @@ int itc_null_count(long long number);
 int itc_max_num(long long number);
 int itc_min_num(long long number);
 int itc_rev_num(long long number);
+bool itc_mirror_num(long long number);
 long long itc_bin_num(long long number);
 long long itc_oct_num(long long number);
 int itc_rev_bin_num(long long number);
