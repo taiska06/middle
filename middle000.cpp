@@ -2,6 +2,21 @@
 
 #include "middle.h"
 using namespace std;
+int itc_second_max_num(long long number) {
+    if (number / 10 == 0)
+        return -1;
+    int max;
+   max = itc_max_num(number);
+    int a,i;
+    a = -1;
+    while (number > 0) {
+         i =number % 10;
+        if (i > a && i != max)
+           a = i;
+        number = number / 10;
+    }
+    return a == -1 ? max : a;
+}
 long long itc_bin_num(long long number) {
     int a,b;
      a = 0;
