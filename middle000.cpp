@@ -1,7 +1,7 @@
 
 
 #include "middle.h"
-
+using namespace std;
 long long itc_bin_num(long long number) {
     int a,b;
      a = 0;
