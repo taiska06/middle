@@ -14,7 +14,7 @@ int itc_len_num(long long number){
     number=number/10;
     d=d+1;
 }
-cout<<d<<endl;
+return d;
 }
 int itc_sum_num(long long number){
      int i,sum;
@@ -26,7 +26,7 @@ int itc_sum_num(long long number){
     number=number/10;
 
  }
- cout<<sum<<endl;
+ return sum;
  }
  int itc_multi_num(long long number){
      int i,sum;
@@ -38,7 +38,7 @@ int itc_sum_num(long long number){
     number=number/10;
 
  }
- cout<<sum<<endl;
+ return sum;
  }
  int itc_null_count(long long number){
  int kol,c;
@@ -51,5 +51,5 @@ int itc_sum_num(long long number){
     }
  number=number/10;
  }
- cout<<kol;
+ return kol;
  }
