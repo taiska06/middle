@@ -4,6 +4,9 @@ int itc_max_num(long long number){
     int max,n;
     max=0;
     n=0;
+	if (number<0){
+        number=number*-1;
+     }
 	while (number > 0){
 		n = number % 10;
 		if (n > max){
@@ -19,6 +22,9 @@ int itc_min_num(long long number){
     int min,n;
     min=9;
     n=0;
+	if (number<0){
+        number=number*-1;
+     }
 	while (number > 0){
 		n = number % 10;
 		if (n < min){
@@ -32,6 +38,9 @@ int itc_min_num(long long number){
 }
 int itc_rev_num(long long number) {
     int a = 0;
+	if (number<0){
+        number=number*-1;
+     }
     while (number > 0) {
         a = a* 10 + number % 10;
         number = number / 10;
