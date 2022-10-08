@@ -2,9 +2,10 @@
 using namespace std;
 int itc_max_num(long long number){
     int max,n;
-    max=0;
+    max=-1;
     n=0;
-	if (number<0){
+
+     if (number<0){
         number=number*-1;
      }
 	while (number > 0){
@@ -16,13 +17,13 @@ int itc_max_num(long long number){
 		number=number/10;
 
 	}
-	return max;
+	cout<<max<<endl;
 }
 int itc_min_num(long long number){
     int min,n;
-    min=9;
+    min=10;
     n=0;
-	if (number<0){
+    if (number<0){
         number=number*-1;
      }
 	while (number > 0){
@@ -34,8 +35,9 @@ int itc_min_num(long long number){
 		number=number/10;
 
 	}
-	return min;
+	cout<<min<<endl;
 }
+
 int itc_rev_num(long long number) {
     int a = 0;
 	if (number<0){
