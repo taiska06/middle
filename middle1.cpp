@@ -2,6 +2,7 @@
 
 #include "middle.h"
 using namespace std;
+
  void itc_num_print(int number){
     cout << number<<endl;
 
@@ -9,7 +10,7 @@ using namespace std;
 int itc_len_num(long long number){
      int d;
      d=0;
- if(number==0)
+if(number==0)
    return 1;
      if (number<0){
         number=number*-1;
@@ -53,6 +54,8 @@ return sum;
  int itc_null_count(long long number){
  int kol,c;
  kol=0;
+ if(number==0)
+   return 1;
  if (number<0){
         number=number*-1;
      }
@@ -66,3 +69,4 @@ return sum;
  }
  return kol;
  }
+
