@@ -17,7 +17,7 @@ int itc_max_num(long long number){
 		number=number/10;
 
 	}
-	cout<<max<<endl;
+	return max;
 }
 int itc_min_num(long long number){
     int min,n;
@@ -35,7 +35,7 @@ int itc_min_num(long long number){
 		number=number/10;
 
 	}
-	cout<<min<<endl;
+	return min;
 }
 
 int itc_rev_num(long long number) {
