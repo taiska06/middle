@@ -4,7 +4,9 @@ int itc_max_num(long long number){
     int max,n;
     max=-1;
     n=0;
-
+      if (number==0){
+        return 0;
+     }
      if (number<0){
         number=number*-1;
      }
@@ -23,6 +25,9 @@ int itc_min_num(long long number){
     int min,n;
     min=10;
     n=0;
+     if (number==0){
+        return 0;
+     }
     if (number<0){
         number=number*-1;
      }
@@ -37,18 +42,26 @@ int itc_min_num(long long number){
 	}
 	return min;
 }
-
 int itc_rev_num(long long number) {
     int a = 0;
-	if (number<0){
-        number=number*-1;
-     }
+	if(number>0){
     while (number > 0) {
         a = a* 10 + number % 10;
         number = number / 10;
     }
-    return a;
+     return a;
+	}
+   else{
+        number=number*-1;
+
+     while (number > 0) {
+        a = a* 10 + number % 10;
+        number = number / 10;
+    }
+   }
+    return -a;
 }
+
 bool itc_mirror_num(long long number) {
     return itc_rev_num(number) == number;
 }
