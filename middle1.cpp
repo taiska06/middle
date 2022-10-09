@@ -13,7 +13,7 @@ int itc_len_num(long long number){
 if(number==0)
    return 1;
      if (number<0){
-        number=number*-1;
+       number=number*-1;
      }
  while (number > 0){
     number=number/10;
