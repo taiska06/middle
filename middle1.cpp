@@ -10,9 +10,8 @@ using namespace std;
 int itc_len_num(long long number){
      int d;
      d=0;
-if(number==0)
-   return 1;
      if (number<0){
+      d++;
        number=number*-1;
      }
  while (number > 0){
