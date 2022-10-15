@@ -65,16 +65,6 @@ int itc_rev_num(long long number) {
 bool itc_mirror_num(long long number) {
     return itc_rev_num(number) == number;
 }
-int itc_mirror_count(long long number){
-  int a;
-  a = 0;
-    for (int i = 0; i < number; ++i)
-        if (itc_mirror_num(i))
-            a=a+1;
-    return a;
-
-
-}
 
 
 
