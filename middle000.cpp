@@ -4,7 +4,7 @@
 using namespace std;
 int itc_second_max_num(long long number) {
 
- if (number / 10 == 0)
+ if (number/10==0)
         return -1;
     int max;
     max= itc_max_num(number);
