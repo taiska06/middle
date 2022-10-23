@@ -50,10 +50,35 @@ int itc_rev_num(long long number) {
     int c = itc_len_num(a);
      return c;
 	}
-
 bool itc_mirror_num(long long number) {
-    return itc_rev_num(number) == number;
+    int a = 0;
+    int b= number;
+	if(number<0){
+            number = number *(-1);
+	}
+while (number > 0) {
+   a = a* 10 + number % 10;
+   number = number / 10;
+    } 
+if (b == a){
+   return 1;
+    }else{
+      return 0;
+        }
+     }
+int itc_mirror_count(long long number){
+    int a=0;
+    if(number<0){
+            number = number *(-1);
+	}
+    for(int i=0; i<number; i++)
+    if(itc_mirror_num(i)){
+          a++;
+    }
+    return a;
 }
+
+
 
 
 
