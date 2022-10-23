@@ -10,6 +10,9 @@ int itc_second_max_num(long long number) {
     max= itc_max_num(number);
     int a,i;
     a = -1;
+  if (number<0){
+        number=number*-1;
+  }
     while (number > 0) {
         i = number % 10;
         if (i > a && i != max)
