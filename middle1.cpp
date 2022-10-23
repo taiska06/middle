@@ -13,8 +13,8 @@ int itc_len_num(long long number){
  if (number == 0){
   return 1;
  }
-     if (number<0){
-       number=number*-1;
+ if (number<0){
+ number=number*-1;
      }
  while (number > 0){
     number=number/10;
@@ -26,8 +26,8 @@ int itc_sum_num(long long number){
      int i,sum;
       i=0;
       sum=0;
-       if (number<0){
-        number=number*-1;
+      if (number<0){
+      number=number*-1;
      }
  while (number > 0){
     i=number%10;
@@ -41,7 +41,7 @@ int itc_sum_num(long long number){
      int i,sum;
       i=0;
       sum=1;
-        if (number<0){
+      if (number<0){
         number=number*-1;
      }
  while (number > 0){
@@ -58,7 +58,7 @@ return sum;
  if(number==0)
    return 1;
  if (number<0){
-        number=number*-1;
+    number=number*(-1);
      }
  while(number != 0){
     c=number%10;
