@@ -44,23 +44,16 @@ int itc_min_num(long long number){
 }
 int itc_rev_num(long long number) {
     int a = 0;
-	if(number>0){
+	if(number<0){
+            number = number *(-1);
+	}
     while (number > 0) {
         a = a* 10 + number % 10;
         number = number / 10;
     }
-     return a;
+    int c = itc_len_num(a);
+     return c;
 	}
-   else{
-        number=number*-1;
-
-     while (number > 0) {
-        a = a* 10 + number % 10;
-        number = number / 10;
-    }
-   }
-    return -a;
-}
 
 bool itc_mirror_num(long long number) {
     return itc_rev_num(number) == number;
