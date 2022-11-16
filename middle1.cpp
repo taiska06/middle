@@ -41,15 +41,24 @@ int itc_sum_num(long long number){
      int i,sum;
       i=0;
       sum=1;
-      if (number<0){
+     if (number<0){
         number=number*-1;
+        while (number > 0){
+        i=number%10;
+        sum=sum*i;
+        number=number/10;
      }
- while (number > 0){
+      }
+     else if(number>0){
+    while (number > 0){
     i=number%10;
     sum=sum*i;
     number=number/10;
-
- }
+    }
+     }
+    else{
+        sum=0;
+    }
 return sum;
  }
  int itc_null_count(long long number){
