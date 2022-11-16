@@ -61,10 +61,11 @@ while (number > 0) {
    number = number / 10;
     } 
 if (b == a){
-   return 1;
+   a= 1;
     }else{
-      return 0;
+      a= 0;
         }
+	return a;
      }
 int itc_mirror_count(long long number){
     int a=0;
