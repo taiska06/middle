@@ -3,24 +3,35 @@
 #include "middle.h"
 using namespace std;
 int itc_second_max_num(long long number) {
-
- if (number/10==0)
+    if (number / 10 == 0)
         return -1;
-    int max;
-    max= itc_max_num(number);
-    int a,i;
-    a = -1;
-  if (number<0){
+    int max,b,i,c;
+    c=0;
+   max = itc_max_num(number);
+    b = -1;
+     if (number/10==0){
+        return -1;
+     }
+     if (number<0){
         number=number*-1;
-  }
+     }
     while (number > 0) {
-        i = number % 10;
-        if (i > a && i != max)
-           a = i;
+        i =number % 10;
+        if (i == max){
+           c++;
+        }
+        if (i > b && i != max)
+            b = i;
         number = number / 10;
-}
- return a;
+
     }
+    if(c>1){
+        return max;
+    }
+    else{
+        return b;
+    }
+}
 long long itc_bin_num(long long number) {
     int a,b;
      a = 0;
