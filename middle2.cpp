@@ -40,15 +40,26 @@ number=number/10;
 }
 int itc_rev_num(long long number) {
     int a = 0;
-	if(number<0){
+    int c;
+    if(number==(-2147483648)){
+        c=10;
+    }
+	else if(number<0){
             number = number *(-1);
+            while (number > 0) {
+            a = a* 10 + number % 10;
+            number = number / 10;
 	}
-    while (number > 0) {
+	c = itc_len_num(a);
+	}
+    else {
+        while (number > 0) {
         a = a* 10 + number % 10;
         number = number / 10;
     }
-    int c = itc_len_num(a);
-     return c;
+    c = itc_len_num(a);
+    }
+ return c;
 	}
 bool itc_mirror_num(long long number) {
     int a = 0;
