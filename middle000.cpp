@@ -32,10 +32,14 @@ int itc_second_max_num(long long number) {
         return b;
     }
 }
+
 long long itc_bin_num(long long number) {
     int a,b;
      a = 0;
      b = 1;
+     if(number<0){
+        return -1;
+     }
     while (number > 0) {
          a = a + b * (number % 2);
          b=b* 10;
