@@ -87,7 +87,7 @@ int itc_mirror_count(long long number){
     if(itc_mirror_num(i)){
           a++;
     }
-    return a;
+    return a+1;
 }
 
 
