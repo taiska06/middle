@@ -1,5 +1,5 @@
 #include "middle.h"
-
+using namespace std;
 
 
 int itc_second_simple_max_num(long long number) {
