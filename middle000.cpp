@@ -40,6 +40,9 @@ long long itc_bin_num(long long number) {
      if(number<0){
         return -1;
      }
+      if(number=0){
+        return 0;
+     }
     while (number > 0) {
          a = a + b * (number % 2);
          b=b* 10;
